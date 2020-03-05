@@ -4,7 +4,7 @@ notifications:
 dist: xenial
 
 language: python
-python: 3.5
+python: 3.6
 
 sudo: false
 
@@ -24,9 +24,9 @@ env:
     - CFLAGS="-O0"
   matrix:
     - TOXENV=flake8
-    - TOXENV=py35-1.11
-    - TOXENV=py35-2.1
-    - TOXENV=py35-2.2
+    - TOXENV=py36-1.11
+    - TOXENV=py36-2.2
+    - TOXENV=py36-3.0
 
 install:
   - pip install tox codecov
